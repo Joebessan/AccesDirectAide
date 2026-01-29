@@ -31,11 +31,11 @@ export function FeatureCard({ icon, title, description, className }: FeatureCard
   return (
     <div 
       className={cn(
-        "glass-card rounded-2xl p-6 hover:scale-[1.02] transition-all duration-300 group",
+        "glass-card rounded-2xl p-6 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 group",
         className
       )}
     >
-      <div className="w-14 h-14 rounded-xl gradient-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+      <div className="w-14 h-14 rounded-xl gradient-primary flex items-center justify-center mb-4">
         {icon}
       </div>
       <h3 className="font-semibold text-lg mb-2">{title}</h3>

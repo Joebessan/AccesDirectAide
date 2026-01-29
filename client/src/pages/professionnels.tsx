@@ -209,8 +209,8 @@ export default function ProfessionnelsPage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredProfessionals.map((pro) => (
-              <Card key={pro.id} className="hover:shadow-lg transition-shadow overflow-hidden group">
+            {filteredProfessionals.map((pro, index) => (
+              <Card key={pro.id} className="hover:shadow-lg transition-all duration-300 overflow-hidden group hover:-translate-y-1 animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
                 <CardHeader className="pb-3">
                   <div className="flex items-start gap-4">
                     <Avatar className="h-14 w-14">

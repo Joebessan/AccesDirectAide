@@ -208,8 +208,8 @@ export default function AidesPage() {
 
             <TabsContent value={selectedCategory} className="mt-0">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {filteredAides.map((aide) => (
-                  <Card key={aide.id} className="hover:shadow-lg transition-shadow overflow-hidden group">
+                {filteredAides.map((aide, index) => (
+                  <Card key={aide.id} className="hover:shadow-lg transition-all duration-300 overflow-hidden group hover:-translate-y-1 animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
                     <CardHeader className="pb-3">
                       <div className="flex items-start justify-between gap-2 mb-2">
                         <Badge className={getCategoryColor(aide.category)}>
@@ -236,9 +236,9 @@ export default function AidesPage() {
 
                       <div className="flex gap-2">
                         <Link href={`/aides/${aide.id}`} className="flex-1">
-                          <Button variant="outline" className="w-full gap-1" data-testid={`button-aide-details-${aide.id}`}>
+                          <Button variant="outline" className="w-full gap-1 group" data-testid={`button-aide-details-${aide.id}`}>
                             En savoir plus
-                            <ArrowRight className="w-4 h-4" />
+                            <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                           </Button>
                         </Link>
                         <a href={aide.sourceUrl} target="_blank" rel="noopener noreferrer">

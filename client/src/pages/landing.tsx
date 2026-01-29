@@ -102,10 +102,10 @@ export default function LandingPage() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style={{ animationDelay: "0.2s" }}>
-              <Link href="/api/login">
-                <Button size="lg" className="text-base px-8 gap-2" data-testid="button-cta-start">
+              <Link href="/inscription">
+                <Button size="lg" className="text-base px-8 gap-2 group" data-testid="button-cta-start">
                   Commencer maintenant
-                  <ArrowRight className="w-4 h-4" />
+                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </Button>
               </Link>
               <Link href="/aides">
@@ -182,7 +182,7 @@ export default function LandingPage() {
 
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {testimonials.map((testimonial, index) => (
-              <GlassCard key={index} className="hover:scale-[1.02] transition-transform">
+              <GlassCard key={index} className="hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
                 <div className="flex gap-1 mb-4">
                   {Array.from({ length: testimonial.rating }).map((_, i) => (
                     <Star key={i} className="w-4 h-4 fill-primary text-primary" />
@@ -213,10 +213,10 @@ export default function LandingPage() {
             <p className="text-lg opacity-90 mb-8">
               Rejoignez des milliers de personnes qui ont déjà trouvé les aides dont ils avaient besoin.
             </p>
-            <Link href="/api/login">
-              <Button size="lg" variant="secondary" className="text-base px-8 gap-2" data-testid="button-cta-bottom">
+            <Link href="/inscription">
+              <Button size="lg" variant="secondary" className="text-base px-8 gap-2 group" data-testid="button-cta-bottom">
                 Créer mon compte gratuitement
-                <ArrowRight className="w-4 h-4" />
+                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </Button>
             </Link>
           </div>

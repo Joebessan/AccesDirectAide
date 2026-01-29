@@ -147,7 +147,7 @@ export default function DashboardPage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
               {quickActions.map((action, index) => (
                 <Link key={index} href={action.href}>
-                  <GlassCard className="hover:scale-[1.02] transition-transform cursor-pointer h-full">
+                  <GlassCard className="hover:-translate-y-1 hover:shadow-lg transition-all duration-300 cursor-pointer h-full">
                     <div className={`w-12 h-12 rounded-xl ${action.color} flex items-center justify-center mb-3`}>
                       <action.icon className="w-5 h-5 text-white" />
                     </div>
@@ -202,7 +202,7 @@ export default function DashboardPage() {
                       <Calendar className="w-12 h-12 mx-auto mb-3 opacity-50" />
                       <p>Aucun rendez-vous à venir</p>
                       <Link href="/rendez-vous/nouveau">
-                        <Button variant="link" className="mt-2">
+                        <Button variant="ghost" className="mt-2">
                           Prendre un rendez-vous
                         </Button>
                       </Link>

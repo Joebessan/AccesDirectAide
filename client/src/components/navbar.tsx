@@ -30,7 +30,7 @@ export function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2 group" data-testid="link-home">
-            <div className="w-9 h-9 rounded-xl gradient-primary flex items-center justify-center transition-transform group-hover:scale-105">
+            <div className="w-9 h-9 rounded-xl gradient-primary flex items-center justify-center">
               <Heart className="w-4 h-4 text-white" />
             </div>
             <span className="font-bold text-lg hidden sm:block">AccesDirectAide</span>
@@ -92,12 +92,12 @@ export function Navbar() {
               </DropdownMenu>
             ) : (
               <div className="flex items-center gap-2">
-                <Link href="/api/login">
+                <Link href="/connexion">
                   <Button variant="ghost" data-testid="button-login">
                     Connexion
                   </Button>
                 </Link>
-                <Link href="/api/login">
+                <Link href="/inscription">
                   <Button className="hidden sm:flex" data-testid="button-signup">
                     S'inscrire
                   </Button>

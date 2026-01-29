@@ -17,6 +17,10 @@ import DemarchesPage from "@/pages/demarches";
 import MentionsLegalesPage from "@/pages/mentions-legales";
 import ConfidentialitePage from "@/pages/confidentialite";
 import AdminPage from "@/pages/admin";
+import LoginPage from "@/pages/login";
+import InscriptionPage from "@/pages/inscription";
+import AideDetailPage from "@/pages/aide-detail";
+import RendezVousPage from "@/pages/rendez-vous";
 import NotFound from "@/pages/not-found";
 
 function HomePage() {
@@ -45,11 +49,16 @@ function Router() {
     <Switch>
       <Route path="/" component={HomePage} />
       <Route path="/dashboard" component={DashboardPage} />
+      <Route path="/connexion" component={LoginPage} />
+      <Route path="/inscription" component={InscriptionPage} />
       <Route path="/aides" component={AidesPage} />
+      <Route path="/aides/:id" component={AideDetailPage} />
       <Route path="/demarches" component={DemarchesPage} />
       <Route path="/professionnels" component={ProfessionnelsPage} />
+      <Route path="/rendez-vous/nouveau" component={RendezVousPage} />
       <Route path="/contact" component={ContactPage} />
       <Route path="/mentions-legales" component={MentionsLegalesPage} />
+      <Route path="/politique-confidentialite" component={ConfidentialitePage} />
       <Route path="/confidentialite" component={ConfidentialitePage} />
       <Route path="/cgu" component={MentionsLegalesPage} />
       <Route path="/accessibilite" component={MentionsLegalesPage} />
