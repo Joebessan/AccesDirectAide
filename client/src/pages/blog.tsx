@@ -1,4 +1,3 @@
-import { Link } from "wouter";
 import { BookOpen, Clock, ArrowRight, Search, Tag } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -145,12 +144,10 @@ export default function BlogPage() {
                         <Clock className="w-4 h-4" />
                         {featuredPost.readTime} de lecture • {featuredPost.date}
                       </span>
-                      <Link href={`/blog/${featuredPost.id}`}>
-                        <Button className="gap-2 group/btn" data-testid="button-read-featured">
-                          Lire l'article
-                          <ArrowRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
-                        </Button>
-                      </Link>
+                      <Button className="gap-2" data-testid="button-read-featured">
+                        Lire l'article
+                        <ArrowRight className="w-4 h-4" />
+                      </Button>
                     </div>
                   </div>
                 </div>
@@ -184,12 +181,10 @@ export default function BlogPage() {
                     <CardDescription className="line-clamp-2 mb-4">{post.excerpt}</CardDescription>
                     <div className="flex items-center justify-between">
                       <span className="text-xs text-muted-foreground">{post.date}</span>
-                      <Link href={`/blog/${post.id}`}>
-                        <Button variant="ghost" size="sm" className="gap-1 group/btn" data-testid={`button-read-${post.id}`}>
-                          Lire
-                          <ArrowRight className="w-3 h-3 transition-transform group-hover/btn:translate-x-1" />
-                        </Button>
-                      </Link>
+                      <Button variant="ghost" size="sm" className="gap-1" data-testid={`button-read-${post.id}`}>
+                        Lire
+                        <ArrowRight className="w-3 h-3" />
+                      </Button>
                     </div>
                   </CardContent>
                 </Card>

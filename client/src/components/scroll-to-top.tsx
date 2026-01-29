@@ -39,7 +39,6 @@ export function ScrollToTop() {
           <Button 
             size="icon" 
             variant="outline"
-            className="rounded-full shadow-lg bg-background/80 backdrop-blur-sm hover:shadow-xl"
             data-testid="button-go-home"
           >
             <Home className="w-4 h-4" />
@@ -50,7 +49,6 @@ export function ScrollToTop() {
         size="icon"
         variant="outline"
         onClick={scrollToTop}
-        className="rounded-full shadow-lg bg-background/80 backdrop-blur-sm hover:shadow-xl"
         data-testid="button-scroll-top"
       >
         <ArrowUp className="w-4 h-4" />

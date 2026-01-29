@@ -338,9 +338,9 @@ export default function LandingPage() {
               </p>
             </div>
             <Link href="/blog">
-              <Button variant="outline" className="gap-2 group" data-testid="button-blog-all">
+              <Button variant="outline" className="gap-2" data-testid="button-blog-all">
                 Voir tous les articles
-                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                <ArrowRight className="w-4 h-4" />
               </Button>
             </Link>
           </div>
@@ -372,10 +372,10 @@ export default function LandingPage() {
                   <CardDescription className="line-clamp-2 mb-4">{post.excerpt}</CardDescription>
                   <div className="flex items-center justify-between">
                     <span className="text-xs text-muted-foreground">{post.date}</span>
-                    <Link href={`/blog/${post.id}`}>
-                      <Button variant="ghost" size="sm" className="gap-1 group/btn" data-testid={`button-blog-read-${post.id}`}>
+                    <Link href="/blog">
+                      <Button variant="ghost" size="sm" className="gap-1" data-testid={`button-blog-read-${post.id}`}>
                         Lire
-                        <ArrowRight className="w-3 h-3 transition-transform group-hover/btn:translate-x-1" />
+                        <ArrowRight className="w-3 h-3" />
                       </Button>
                     </Link>
                   </div>
@@ -421,7 +421,6 @@ export default function LandingPage() {
             <Link href="/contact">
               <Button variant="outline" className="gap-2" data-testid="button-faq-contact">
                 Une autre question ? Contactez-nous
-                <ArrowRight className="w-4 h-4" />
               </Button>
             </Link>
           </div>
@@ -441,9 +440,9 @@ export default function LandingPage() {
               Rejoignez des milliers de personnes qui ont déjà trouvé les aides dont ils avaient besoin.
             </p>
             <Link href="/inscription">
-              <Button size="lg" variant="secondary" className="text-base px-8 gap-2 group" data-testid="button-cta-bottom">
+              <Button size="lg" variant="secondary" className="text-base px-8 gap-2" data-testid="button-cta-bottom">
                 Créer mon compte gratuitement
-                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                <ArrowRight className="w-4 h-4" />
               </Button>
             </Link>
           </div>

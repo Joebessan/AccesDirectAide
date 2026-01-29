@@ -63,7 +63,6 @@ function Router() {
       <Route path="/documents" component={DocumentsPage} />
       <Route path="/messages" component={MessagesPage} />
       <Route path="/blog" component={BlogPage} />
-      <Route path="/blog/:id" component={BlogPage} />
       <Route path="/contact" component={ContactPage} />
       <Route path="/mentions-legales" component={MentionsLegalesPage} />
       <Route path="/politique-confidentialite" component={ConfidentialitePage} />
