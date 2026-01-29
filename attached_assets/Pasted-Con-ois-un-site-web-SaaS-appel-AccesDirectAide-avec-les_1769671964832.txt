@@ -1,0 +1,145 @@
+Conçois un site web SaaS appelé AccesDirectAide avec les caractéristiques suivantes :
+
+🎯 Objectif du projet
+AccesDirectAide est une plateforme numérique qui doit servir de guichet unique pour :
+
+Trouver et comprendre les aides disponibles (argent, logement, santé, etc.).
+
+Réaliser des démarches administratives avec des explications simples et fiables.
+
+Contacter et prendre rendez-vous avec des professionnels ou associations.
+
+Déposer et partager des documents de manière sécurisée.
+
+Le site doit être clair, rassurant, accessible et fiable, avec des informations toujours rattachées à des sources officielles (lien + date de consultation).
+
+🎨 Style et Front-End
+Framework : React + Vite.
+
+Design : Glassmorphism aesthetics (effet de transparence, flou, élégance moderne).
+
+Interface claire, minimaliste, rassurante.
+
+Couleurs douces et inclusives (bleu, vert, blanc).
+
+Icônes simples et lisibles.
+
+Navigation fluide et structurée par étapes.
+
+Mobile-first et totalement responsive sur tous les écrans.
+
+Accessibilité renforcée : compatibilité avec lecteurs d’écran, contrastes adaptés, boutons visibles, textes lisibles.
+
+Ajoute des animations et motions fluides sur les sections, boutons et transitions de pages.
+
+Quand on change de page, le site doit repartir automatiquement en haut.
+
+Ajoute un footer complet sur toutes les pages avec : mentions légales, politique de confidentialité, contact, liens utiles, réseaux sociaux.
+
+Tous les boutons sur toutes les pages doivent fonctionner et être vérifiés un par un.
+
+👤 Espace Utilisateur
+Création de compte avec rôles :
+
+Particulier (citoyen).
+
+Professionnel individuel (conseiller social).
+
+Structure professionnelle (association/organisation).
+
+Consultation des aides et démarches avec sources officielles obligatoires.
+
+Prise de rendez-vous :
+
+Voir disponibilités.
+
+Choisir un créneau.
+
+Confirmation par mail.
+
+Annulation/reprogrammation.
+
+Notifications automatiques.
+
+Visio-rendez-vous (uniquement si validé par l’admin).
+
+Espace sécurisé de documents :
+
+Dépôt de justificatifs, formulaires, courriers.
+
+Accès limité (séparation stricte des droits).
+
+Historique des actions (upload, téléchargement, suppression).
+
+Messagerie liée au dossier/rendez-vous.
+
+Suivi d’avancement avec statuts simples : “à fournir”, “reçu”, “à compléter”.
+
+👨‍💼 Espace Professionnel
+Profil détaillé : domaines d’intervention, territoires, modalités (présentiel/visio), disponibilités, contacts, pièces justificatives.
+
+Validation/modération par l’admin avant activation.
+
+Agenda intégré pour gérer les rendez-vous.
+
+Accès aux documents des utilisateurs liés à ses rendez-vous.
+
+🛠️ Espace Administrateur
+Bouton caché sur le site qui mène à l’espace admin.
+
+Authentification obligatoire avec identifiant et mot de passe :
+
+User : Admin26
+
+Mot de passe : Azerty2026
+
+Backoffice complet :
+
+Gestion des comptes (création, suppression, suspension).
+
+Validation des professionnels et de leurs options (ex. visio).
+
+Modération des contenus et profils.
+
+Suivi des rendez-vous et agendas.
+
+Gestion des documents et traçabilité des actions.
+
+⚙️ Fonctionnalités supplémentaires
+Chatbot d’orientation pour guider l’utilisateur.
+
+Notifications push sur mobile.
+
+Tableau de bord utilisateur (démarches en cours, documents déposés, rendez-vous à venir).
+
+Tableau de bord professionnel (rendez-vous, documents reçus, tâches).
+
+Statistiques pour l’admin (consultations, rendez-vous, documents échangés).
+
+Multilingue (français + autres langues).
+
+Extension géographique : Alsace (67/68) puis national.
+
+✅ Exigence finale
+L’IA doit vérifier que toutes les fonctionnalités marchent.
+
+Tous les boutons sur toutes les pages doivent être testés un par un.
+
+Le site doit être robuste, sans pages vides, sans erreurs visibles.
+
+Toutes les pages doivent réagir correctement et être fluides.
+
+Le site doit être responsive et animé sur toutes les plateformes.
+
+🖥️ Déploiement sur Render
+Prévoir une architecture compatible avec Render :
+
+API Node.js  déployée sur Render.
+
+Base de données Postgres hébergée sur Render (ou Neon si reliée).
+
+Front React/Vite déployé sur Render avec build optimisé.
+
+Vérifier que les routes, variables d’environnement et connexions DB sont bien compatibles avec Render.
+
+Prévoir des scripts simples (npm run build, npm start) pour faciliter le déploiement.
