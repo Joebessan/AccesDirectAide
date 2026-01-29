@@ -51,6 +51,24 @@ shared/           # Shared types and schemas
   models/         # Data models (auth)
 ```
 
+### Key Routes
+- `/` - Landing page with glassmorphism hero section
+- `/connexion` - Login page with Replit Auth integration
+- `/inscription` - Signup page with account type selector (Particulier/Professionnel/Structure)
+- `/aides` - Catalogue of available social aids
+- `/aides/:id` - Aide detail page with eligibility criteria and documents
+- `/professionnels` - Directory of social workers and professionals
+- `/rendez-vous/nouveau` - Appointment booking flow (3-step process)
+- `/dashboard` - User dashboard (authenticated)
+- `/secret-admin-panel-2026` - Admin panel (credentials: Admin26/Azerty2026)
+
+### Design System
+- **Glassmorphism**: Custom `.glass-premium`, `.glass-card`, `.glass-strong` classes with backdrop blur and transparency
+- **Animations**: `animate-fade-in`, `animate-slide-up`, `animate-scale-in`, `floatSlow`, `pulseSoft` for smooth UI transitions
+- **Card Hover Effects**: Use `hover:-translate-y-1 hover:shadow-lg` for lift effect (NO hover:scale on buttons)
+- **Button Sizing**: Always use `size="lg"` variant instead of explicit h-* classes
+- **Important**: Buttons must NOT have custom hover/active scale animations - rely on built-in shadcn elevate utilities
+
 ## External Dependencies
 
 ### Database
