@@ -33,9 +33,9 @@ export default function MentionsLegalesPage() {
               <h2>3. Hébergeur</h2>
               <p>
                 Le site est hébergé par :<br />
-                <strong>Replit, Inc.</strong><br />
-                San Francisco, CA, USA<br />
-                Site web : www.replit.com
+                <strong>AccesDirectAide SAS</strong><br />
+                Paris, France<br />
+                Contact : hebergement@accesdirectaide.fr
               </p>
             </section>
 

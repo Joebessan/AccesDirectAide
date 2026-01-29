@@ -33,7 +33,7 @@ const accountTypes = [
 export default function InscriptionPage() {
   const [selectedType, setSelectedType] = useState<AccountType>("particulier");
 
-  const handleReplitSignup = () => {
+  const handleSocialSignup = () => {
     window.location.href = "/api/login";
   };
 
@@ -102,13 +102,13 @@ export default function InscriptionPage() {
               </div>
 
               <Button 
-                onClick={handleReplitSignup}
+                onClick={handleSocialSignup}
                 size="lg"
                 className="w-full mb-6"
-                data-testid="button-replit-signup"
+                data-testid="button-social-signup"
               >
                 <Sparkles className="w-4 h-4 mr-2" />
-                S'inscrire avec Replit
+                Inscription rapide
               </Button>
 
               <div className="relative my-6">
@@ -122,7 +122,7 @@ export default function InscriptionPage() {
                 </div>
               </div>
 
-              <form className="space-y-4" onSubmit={(e) => { e.preventDefault(); handleReplitSignup(); }}>
+              <form className="space-y-4" onSubmit={(e) => { e.preventDefault(); handleSocialSignup(); }}>
                 <div className="grid grid-cols-2 gap-3">
                   <div className="space-y-2">
                     <Label htmlFor="firstName" className="text-sm font-medium">Prénom</Label>

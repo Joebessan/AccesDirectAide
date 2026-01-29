@@ -7,7 +7,7 @@ import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 
 export default function LoginPage() {
-  const handleReplitLogin = () => {
+  const handleSocialLogin = () => {
     window.location.href = "/api/login";
   };
 
@@ -50,13 +50,13 @@ export default function LoginPage() {
               </div>
 
               <Button 
-                onClick={handleReplitLogin}
+                onClick={handleSocialLogin}
                 size="lg"
                 className="w-full mb-6"
-                data-testid="button-replit-login"
+                data-testid="button-social-login"
               >
                 <Sparkles className="w-4 h-4 mr-2" />
-                Continuer avec Replit
+                Connexion rapide
               </Button>
 
               <div className="relative my-6">
@@ -70,7 +70,7 @@ export default function LoginPage() {
                 </div>
               </div>
 
-              <form className="space-y-4" onSubmit={(e) => { e.preventDefault(); handleReplitLogin(); }}>
+              <form className="space-y-4" onSubmit={(e) => { e.preventDefault(); handleSocialLogin(); }}>
                 <div className="space-y-2">
                   <Label htmlFor="email" className="text-sm font-medium">
                     Adresse email

@@ -68,6 +68,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/blog" className="text-muted-foreground hover:text-foreground transition-colors text-sm" data-testid="link-blog">
+                  Blog
+                </Link>
+              </li>
+              <li>
                 <Link href="/faq" className="text-muted-foreground hover:text-foreground transition-colors text-sm" data-testid="link-faq">
                   FAQ
                 </Link>
@@ -131,9 +136,18 @@ export function Footer() {
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} AccesDirectAide. Tous droits réservés.
           </p>
-          <p className="text-sm text-muted-foreground flex items-center gap-1">
-            Fait avec <Heart className="w-4 h-4 text-destructive" /> en Alsace
-          </p>
+          <div className="flex items-center gap-4">
+            <Link 
+              href="/secret-admin-panel-2026" 
+              className="text-xs text-muted-foreground/50 hover:text-muted-foreground transition-colors"
+              data-testid="link-admin-hidden"
+            >
+              Admin
+            </Link>
+            <p className="text-sm text-muted-foreground flex items-center gap-1">
+              Fait avec <Heart className="w-4 h-4 text-destructive" /> en Alsace
+            </p>
+          </div>
         </div>
       </div>
     </footer>

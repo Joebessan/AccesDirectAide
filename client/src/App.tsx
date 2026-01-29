@@ -6,6 +6,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ScrollToTop } from "@/components/scroll-to-top";
+import { Chatbot } from "@/components/chatbot";
 import { useAuth } from "@/hooks/use-auth";
 
 import LandingPage from "@/pages/landing";
@@ -21,6 +22,9 @@ import LoginPage from "@/pages/login";
 import InscriptionPage from "@/pages/inscription";
 import AideDetailPage from "@/pages/aide-detail";
 import RendezVousPage from "@/pages/rendez-vous";
+import DocumentsPage from "@/pages/documents";
+import MessagesPage from "@/pages/messages";
+import BlogPage from "@/pages/blog";
 import NotFound from "@/pages/not-found";
 
 function HomePage() {
@@ -56,6 +60,10 @@ function Router() {
       <Route path="/demarches" component={DemarchesPage} />
       <Route path="/professionnels" component={ProfessionnelsPage} />
       <Route path="/rendez-vous/nouveau" component={RendezVousPage} />
+      <Route path="/documents" component={DocumentsPage} />
+      <Route path="/messages" component={MessagesPage} />
+      <Route path="/blog" component={BlogPage} />
+      <Route path="/blog/:id" component={BlogPage} />
       <Route path="/contact" component={ContactPage} />
       <Route path="/mentions-legales" component={MentionsLegalesPage} />
       <Route path="/politique-confidentialite" component={ConfidentialitePage} />
@@ -77,6 +85,7 @@ function App() {
           <ScrollToTop />
           <Toaster />
           <Router />
+          <Chatbot />
         </TooltipProvider>
       </ThemeProvider>
     </QueryClientProvider>
